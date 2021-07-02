@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   protected
   def after_sign_in_path_for(resource)
     user_path(current_user)
+    # resourceはdevise機能のデフォルト（広義的な意味）、引数に関しては具体的に示す方がbetter
   end
 
 
